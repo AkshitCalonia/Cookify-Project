@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block main %}
+
+<div class="specbody">
+<p class="specp">Relax when you have <span class="fancy" style="color: aqua;">Cookify.</span></p>
+</div>
+<br>
+<div class="stylediv">
+<br>
+<p style="color:red;">Upload your reciept or list of ingredients here</p>
+<form id="myfilesub" action="/process" method = "post" enctype="multipart/form-data">
+    <input type="file" name="myFile" id="myFile">
+    <br><br>
+    <button type="submit" style="width:200px;" class="btn btn-success">Submit</button>
+</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Recipies
+{% endblock %}
+
+{% block main %}
+
+<h1></h1>
+<div class="styleop">
+    <ul>
+        {% for item in ingredients %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div><br>
+
+<div class="stylediv">
+        {% for i in instructions %}
+            {{ i }}<br>
+        {% endfor %}
+</div>
+
+<script>
+
+<!-- Call some funtion here bro...... -->
+</script>
+
+{% endblock %}
